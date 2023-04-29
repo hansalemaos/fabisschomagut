@@ -186,7 +186,6 @@ def color_converter(color: Union[int, str, List[int], Tuple[int]]) -> tuple:
     """
     if isinstance(color, int):
         color = "#" + "{0:06X}".format(color)
-        print(color)
 
     if isinstance(color, str):
         color = color.strip().lower()
